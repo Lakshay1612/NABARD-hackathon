@@ -10,7 +10,7 @@ root.geometry("450x560+500+200")
 root.configure(bg="#f4fdfe")
 root.resizable(False, False)
 
-
+#helloooooooooo
 def Send():
     window=Toplevel(root)
     window.title("Send")
@@ -131,7 +131,7 @@ receive.place(x=300, y=100)
 
 
 #label
-Label(root,text="Send", font=('Acumin Variable Concept', 17, 'bold'), bg="#f4fdfe").place(x=65,y=200)
+Label(root,text="Send", font=('Acumin Variable Concept', 17, 'bold'), bg="#f4fdf    e").place(x=65,y=200)
 Label(root,text="Receive", font=('Acumin Variable Concept', 17, 'bold'), bg="#f4fdfe").place(x=300,y=200)
 
 
