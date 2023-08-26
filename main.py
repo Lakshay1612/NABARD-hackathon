@@ -20,6 +20,7 @@ def Send():
 
 
     def select_file():
+        global filename
         filename=filedialog.askopenfile(initialdir=os.getcwd(),
                                         title='Select Image File',
                                         filetype=(('file_type', '*.txt'), ('all files', '*.*')))
@@ -28,11 +29,11 @@ def Send():
         s=socket.socket()
         host=socket.gethostname()
         port=8080
-        s.bind((host,port))
+        s.bind((host, port))
         s.listen(1)
         print(host)
         print('waiting for an incomming connection....')
-        conn,addr=s.accept()
+        conn, addr=s.accept()
         file=open(filename,'rb')
         file_data=file.read(1024)
         conn.send(file_data)
