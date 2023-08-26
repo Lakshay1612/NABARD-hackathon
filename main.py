@@ -47,7 +47,7 @@ def Send():
     sbackground=PhotoImage(file="logo.png")
     Label(window, image=sbackground).place(x=-2,y=0)
 
-    Mbackground=PhotoImage(file="logo.png")
+    Mbackground=PhotoImage(file="images/id.png")
     Label(window, image=Mbackground,bg="#f4fdfe").place(x=100, y=260)
 
     host = socket.gethostname()
@@ -81,7 +81,7 @@ def Receive():
         print("file has been received successfully")
 
     #icon
-    image_icon1 = PhotoImage(file="logo.png")
+    image_icon1 = PhotoImage(file="images/id.png")
     main.iconphoto(False,image_icon1)
 
 
